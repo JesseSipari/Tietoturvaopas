@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tietoturvaopas</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <script>
+        function openSite(src) {
+            document.getElementById("contents").setAttribute("src", src);
+        }
+    </script>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Topic2">Topic2</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+    <div id="divid">
+        <iframe id="contents" src="home.html"></iframe>
+
+    </div>
+</body>
+
+</html>
