@@ -28,17 +28,20 @@ p {
 
 h1 {
     text-align: center;
+    color: crimson;
 }
 
 h2 {
     text-align: center;
+    color: crimson;
 }
 
 h3 {
     text-align: center;
+    color: crimson;
 }
 
-#divid {
+.container {
     width: 80%;
     height: 100%;
     margin: auto;

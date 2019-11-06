@@ -13,22 +13,33 @@
             document.getElementById("contents").setAttribute("src", src);
         }
     </script>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#Topic2">Topic2</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </li>
-    </ul>
-    <div id="divid">
-        <iframe id="contents" src="home.html"></iframe>
+    <div class="wrapper">
+        <div class="navbar1">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar1 end -->
+        <div class="main-content">
+            <iframe class="contents" src="home.html"></iframe>
 
+        </div>
+        <!-- main-content end -->
+        <div class="footer">
+
+        </div>
+        <!-- Footer end -->
     </div>
+    <!-- wrapper end -->
 </body>
 
 </html>
