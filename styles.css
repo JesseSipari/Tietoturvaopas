@@ -1,26 +1,54 @@
 /* BODY */
 
 body {
-    max-width: 80%;
+    width: 90%;
+    height: 300%;
     margin: auto;
-    background: #96969C;
+    background: #1e2850;
     padding: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-#inner-body {
-    max-width: 80%;
+.main-content {
+    width: 60%;
     margin: auto;
-    background: rgb(57, 57, 107);
+}
+
+.inner-body {
+    max-width: 60%;
+    margin: auto;
+    background: #eee;
     padding: 10px;
 }
 
 p {
     font-family: verdana;
     font-size: 16px;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: #7ec5ce;
+    margin: 5% 5% 0% 5%;
+    color: #354170;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header-h1 {
+    text-align: center;
+    color: #eee;
+}
+
+.header-h2 {
+    text-align: center;
+    color: #eee;
+}
+
+.header-h3 {
+    text-align: center;
+    color: #eee;
 }
 
 
@@ -28,17 +56,17 @@ p {
 
 h1 {
     text-align: center;
-    color: crimson;
+    color: #354170;
 }
 
 h2 {
     text-align: center;
-    color: crimson;
+    color: #354170;
 }
 
 h3 {
     text-align: center;
-    color: crimson;
+    color: #354170;
 }
 
 .container {
@@ -62,16 +90,24 @@ iframe {
 
 /* NAVBAR */
 
+#navbar {
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width: 100%;
+    margin: auto;
+    background-color: #2c5e76;
 }
 
 li {
     float: left;
+    font-size: 22px;
 }
 
 li a,
@@ -85,7 +121,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(70, 167, 86);
 }
 
 li.dropdown {
@@ -96,7 +132,7 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -105,16 +141,26 @@ li.dropdown {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: rgb(70, 167, 86);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.sticky+.main-content {
+    padding-top: 60px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 

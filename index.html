@@ -8,29 +8,33 @@
 </head>
 
 <body>
-    <script>
-        function openSite(src) {
-            document.getElementById("contents").setAttribute("src", src);
-        }
-    </script>
+
     <div class="wrapper">
-        <div class="navbar1">
+
+        <div class="header">
+            <h2 class="header-h2">Tietoturvaopas</h2>
+        </div>
+        <div id="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="home.html" target="contents">Tietoturva</a></li>
+                <li><a href="#email">Sähköposti</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <a href="javascript:void(0)" class="dropbtn">Haittaohjelmat</a>
                     <div class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
                     </div>
+                    <li><a href="#asiakastiedot">Asiakastiedot</a></li>
+                    <li><a href="#salasanat">Salasanat</a></li>
+                    <li><a href="#update">Päivitysohjeet</a></li>
+
                 </li>
             </ul>
         </div>
         <!-- Navbar1 end -->
         <div class="main-content">
-            <iframe class="contents" src="home.html"></iframe>
+            <iframe class="contents" src="home.html" name="contents"></iframe>
 
         </div>
         <!-- main-content end -->
@@ -40,6 +44,22 @@
         <!-- Footer end -->
     </div>
     <!-- wrapper end -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
