@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Tietoturvaopas</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         </div>
         <!-- Navbar1 end -->
         <div class="main-content">
-            <iframe class="contents" src="home.html" name="contents"></iframe>
+            <iframe id="contents" src="home.html" name="contents"></iframe>
 
         </div>
         <!-- main-content end -->
@@ -47,13 +48,13 @@
     <!-- wrapper end -->
     <script>
         window.onscroll = function() {
-            myFunction()
+            stickyNavBar()
         };
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
-        function myFunction() {
+        function stickyNavBar() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {
@@ -61,6 +62,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>
