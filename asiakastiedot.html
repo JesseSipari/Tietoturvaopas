@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tietoturvaopas</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <img class="header-image" src="images/alkman-logo.jpg" alt="Alkman logo" width="150">
+            <h1 class="header-h1">Tietoturvaopas</h1>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Tietoturva</a></li>
+                <li><a href="email.html">Sähköposti</a></li>
+                <li class="dropdown">
+                    <a href="haittaohjelmat.html" class="dropbtn">Haittaohjelmat</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <li><a href="asiakastiedot.html">Asiakastiedot</a></li>
+                    <li><a href="salasanat.html">Salasanat</a></li>
+                    <li><a href="update.html">Päivitysohjeet</a></li>
+                    <li><a href="sources.html">Lähteet</a></li>
+
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar1 end -->
+        <div class="main-content">
+            <div class="content-h1">
+                <h1>Asiakastiedot</h1>
+            </div>
+
+            <hr>
+            <div class="content-h3">
+                <h3>Mitä ovat asiakastiedot?</h3>
+            </div>
+
+            <p>Asiakastiedoilla tarkoitetaan tietoja, joita yritys kerää kuluttajasta ostotapahtumaa tehdessä. Kortinhaltijan tietojen suojaaminen on erityisen tärkeää, koska suurin osa tietomurroista tapahtuu niiden avulla. Erityisen tärkeää tietojen suojaaminen
+                on yrityksille ja kauppiaille, sillä suurin osa datarikoksista liittyvät kaupantekoon. Asiakastietojen suojaamisessa yrityksen pitää noudattaa PCI-tietoturvastandardia. Internetissä tapahtuvissa maksuissa kauppiaan vaatimukset tietojen
+                suojaamiseen liittyvät pääasiassa ostajan tunnistamiseen. Kauppiaan pitää toki myös varmistaa, että verkkokaupan palveluntarjoaja on luotettava ja turvallinen. Kortinhaltijan tiedot pitää suojata kaikissa laitteissa, jotka liittyvät tietojen
+                käsittelyyn. Näitä laitteita ovat esimerkiksi tietokoneet, matkapuhelimet, tulostimet ja maksukortin lukijat. Mitä yrityksen pitää tehdä taatakseen turvallisen tietojenkäsittelyn? Verkkokaupassa yrityksen kannattaa käyttää 3-D Secure -palvelua
+                kortinhaltijan tietojen varmentamisessa. 3-D Secure -palvelun käyttö siirtää yrityksen vastuun mahdollisista korttipetoksista kortintarjoajana toimivalle pankille. Älkää tallentako mitään kortinhaltijan tietoja, jotka eivät ole välttämättömiä
+                liiketoimintanne kannalta. Sensitiivisiä tunnistamistietoja, kuten maksukorttien magneettiraitaa ja PIN:iä, ei saa PCI:n mukaan tallentaa ollenkaan. Julkisilla palvelimilla liikkuvat kortinhaltijatiedot on salattava. Käyttäkää tähän vahvoja
+                salausprotokollia, kuten SSL ja IPSec. Salauksen avulla huijarit eivät voi lukea tietoa, vaikka saavatkin sen haltuunsa. Myös point-of-sale -laitteet on salattava. Käyttäkää kortinhaltijatietojen suojaamiseen viruksenhallintaohjelmia.
+                Ne on asennettava jokaisen osuuskuntaan kuuluvan henkilön laitteeseen, joka käsittelee kortinhaltijan tietoja. Käyttäkää ostosten vastaanottamiseen laitteita ja sovelluksia, jotka PCI Security Standards Council on hyväksynyt. Rajoittakaa
+                henkilöiden pääsyä kortinhaltijan tietoihin. Mitä vähemmän henkilöitä pääsee tietoihin, sitä enemmän turvassa ne ovat. Henkilöt täytyy myös tunnistaa, ennen kuin ne pääsevät käsiksi tietoihin. Estäkää tietoturva-aukkojen syntymistä tekemällä
+                tarkistuksia sovelluksille ja laitteille noin neljä kertaa vuodessa. Tarkistuksia pitää myös tehdä, jos laitteistoihin tulee isoja muutoksia. Lukitkaa myyntipisteenne laitteet työpäivän päätteeksi. Tällöin esimerkiksi asiakkaat eivät voi
+                käyttää laitteitanne tietoja, vaikka laitteet varastettaisiinkin. Pitäkää huolta, että mahdollinen kolmas osapuoli on sitoutunut noudattamaan samoja tietoturvaohjeita. </p>
+        </div>
+        <!-- main-content end -->
+
+        <div class="footer ">
+
+        </div>
+        <!-- Footer end -->
+    </div>
+    <!-- wrapper end -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar ");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky ")
+            } else {
+                navbar.classList.remove("sticky ");
+            }
+        }
+    </script>
+</body>
+
+</html>
