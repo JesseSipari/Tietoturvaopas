@@ -55,19 +55,20 @@
     <!-- wrapper end -->
     <script>
         window.onscroll = function() {
-            myFunction()
+            stickyBar()
         };
 
-        var navbar = document.getElementById("navbar ");
+        var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
-        function myFunction() {
+        function stickyBar() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky ")
+                navbar.classList.add("sticky")
             } else {
-                navbar.classList.remove("sticky ");
+                navbar.classList.remove("sticky");
             }
         }
+    </script>
     </script>
 </body>
 

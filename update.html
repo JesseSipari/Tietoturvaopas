@@ -37,18 +37,18 @@
         <!-- Navbar1 end -->
         <div class="main-content">
             <div class="content-h1">
-                <h1>Tietoturva</h1>
+                <h1>Päivittäminen</h1>
             </div>
             <hr>
             <div class="content-h3">
                 <h3>Mitä on tietoturva?</h3>
             </div>
-            <p>Tietoturvalla pyritään suojaamaan yritykselle tai yksilölle tärkeät tiedot ulkopuolisilta. Tietoturva on siis toimenpiteitä, joilla pyritään takamaan yhtiön tai yksilön tietojen koskemattomuuden.<br><br> Tavoitteita tietoturvalle on yksilön
-                tai organisaation tietojen <em>, kiistämättömyys, pääsynvalvonta, saatavuus ja tarkastettavuus.</em> Iso osa tietoturvaa on varmistaa, että tiedot ovat luottamuksellisia ja niihin pääsevät käsiksi vain oikeutetut henkilöt. Oikeus tietojen
-                käyttöön, säilytykseen ja tuhoamiseen annetaan turvaluokitusten avulla. <br><br><em>Eheys tai oikeellisuus</em>, tarkoittaa tiedon muuttumattomuutta tiedon luomisen, käsittelyn ja siirron aikana.<br><br><em>Kiistämättömyys</em> on tiedon
-                siirtoon tai käsittelyyn osallistuneiden käyttäjien valvomista sekä tunnistamista.<br><br><em>Pääsynvalvonta</em> on käyttäjien tietoihin pääsemisen valvontaa sekä rajoittamista.<br><br><em>Saatavuudella</em> tarkoitetaan tiedon viiveetöntä
-                ja helppoa käyttöä niille, joilla on siihen oikeus.
-                <br><br><em>Tarkastettavuus</em> on sitä, että tietojenkäsittelyn tuloksena saatu tieto kyetään tarkastamaan ja sen oikeellisuus kyettävä osoittamaan.</p>
+            <p>Kaikki laitteet ja niiden ohjelmat pitäisi pitää ajan tasalla jatkuvasti, koska päivittäminen on laitteen turvallisuuden kannalta tärkeää. Monet haittaohjelmahyökkäykset tehdään hyödyntäen laitteista löydettyjä haavoittuvuuksia, joita päivitykset
+                korjaavat. Jotkut ohjelmat ja sovellukset voivat näyttää käyttäjälle mainoksina väärennettyjä päivitysilmoituksia, jotka sisältävät ladatessaan haittaohjelmia. Laite- ja ohjelmistopäivitykset pitää tämän takia asentaa vain luotettavista
+                lähteistä. Jos päivityksen aikoo ladata verkkosivulta, pitää se ladata luotettavilta sivuilta. Monet huijaussivustot tarjoavat väärennettyjä päivityksiä ja/tai väittävät, että päivitystä tarvitsematon laite tai ohjelma tarvitsee päivitystä.
+                Näitä päivityksiä ei pidä ladata, jos sivusto ei ole luotettava, koska ne sisältävät haittaohjelmia ja ne eivät ole aitoja päivityksiä. Laitteet ja ohjelmat pyrkivät yleensä päivittymään itsestään, mutta joskus käyttäjältä pyydetään lupaa
+                päivityksen lataamiseen. Jos laitteen versiosta on epävarma, voi laitteen versiotunnusta verrata virallisissa päivitystiedoissa näkyviin versiotunnuksiin. Laitteissa ja sovelluksissa kannattaa asettaa automaattinen päivittäminen päälle,
+                jos se on mahdollista.</p>
         </div>
         <!-- main-content end -->
         <div class="push"></div>
@@ -60,17 +60,17 @@
     <!-- wrapper end -->
     <script>
         window.onscroll = function() {
-            myFunction()
+            stickyBar()
         };
 
-        var navbar = document.getElementById("navbar ");
+        var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
-        function myFunction() {
+        function stickyBar() {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky ")
+                navbar.classList.add("sticky")
             } else {
-                navbar.classList.remove("sticky ");
+                navbar.classList.remove("sticky");
             }
         }
     </script>
