@@ -1,192 +1,201 @@
-/* BODY */
-
-body {
-    width: auto;
-    height: 300%;
-    margin: auto;
-    background: #1e2850;
-    padding: 10px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.main-content {
-    width: 75%;
-    background-color: aliceblue;
-    margin: auto;
-    padding: 10px, 0, 10px, 0;
-    min-height: 80vh;
-}
-
-.inner-body {
-    max-width: 75%;
-    margin: auto;
-    background: #eee;
-    padding: 10px;
-}
-
-p {
-    font-family: verdana;
-    font-size: 16px;
-    margin: 0% 10% 10% 10%;
-    color: #354170;
-    padding: 0 20px 80px 50px;
-    line-height: 1.5;
-}
-
-.paragraph-list {
-    font-family: verdana;
-    font-size: 16px;
-    margin: 0% 10% 0% 10%;
-    color: #354170;
-    padding: 0 20px 80px 50px;
-    line-height: 1.5;
-}
-
-.wrapper {
-    margin: 0 auto;
-}
-
-
-/* HEADER */
-
-.header-h1 {
-    text-align: center;
-    color: #eee;
-    padding: 55px;
-}
-
-.header-h2 {
-    text-align: center;
-    color: #eee;
-}
-
-.header-h3 {
-    text-align: center;
-    color: #eee;
-}
-
-.header-image {
-    float: left;
-}
-
-
-/* OTSIKOT */
-
-h1 {
-    text-align: center;
-    color: #354170;
-}
-
-h2 {
-    text-align: center;
-    color: #354170;
-}
-
-h3 {
-    text-align: center;
-    color: #354170;
-}
-
-.content-h1 {
-    padding: 1px;
-    margin: 30px 0 0 0;
-}
-
-.content.h3 {
-    padding: 15px;
-}
-
-
-/* SISÄLTÖ */
-
-.footer {
-    background-color: #666;
-    color: #fff;
-    height: 150px;
-    margin: 50px 0 0 0;
-}
-
-.footer p {
-    margin: auto;
-    padding: 20px 0 0 50px;
-}
-
-
-/* NAVBAR */
-
-#navbar {
-    width: 100%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-    margin: auto;
-    background-color: #2c5e76;
-}
-
-li {
-    float: left;
-    font-size: 22px;
-}
-
-li a,
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: rgb(70, 167, 86);
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: rgb(70, 167, 86);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.sticky+.main-content {
-    padding-top: 60px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-
-/* ------- */
+    /* BODY */
+    
+    body {
+        width: auto;
+        height: 300%;
+        margin: auto;
+        background: #1e2850;
+        padding: 10px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .main-content {
+        width: 75%;
+        background-color: aliceblue;
+        margin: auto;
+        padding: 10px, 0, 10px, 0;
+        min-height: 80vh;
+    }
+    
+    .inner-body {
+        max-width: 75%;
+        margin: auto;
+        background: #eee;
+        padding: 10px;
+    }
+    
+    p {
+        font-family: verdana;
+        font-size: 16px;
+        margin: 0% 10% 10% 10%;
+        color: #354170;
+        padding: 0 20px 80px 50px;
+        line-height: 1.5;
+    }
+    
+    .p-inner {
+        font-family: verdana;
+        font-size: 16px;
+        margin: 0px 10% 10% 10%;
+        color: #354170;
+        padding: 0px 20px 10px 50px;
+        line-height: 1.5;
+    }
+    
+    .paragraph-list {
+        font-family: verdana;
+        font-size: 16px;
+        margin: 0% 10% 0% 10%;
+        color: #354170;
+        padding: 0 20px 80px 50px;
+        line-height: 1.5;
+    }
+    
+    .paragraph-ulist {
+        list-style-type: disc;
+        font-family: verdana;
+        font-size: 16px;
+        margin: 0% 10% 0% 10%;
+        color: #354170;
+        padding: 0 20px 80px 50px;
+        line-height: 1.5;
+    }
+    
+    .wrapper {
+        margin: 0 auto;
+    }
+    /* HEADER */
+    
+    .header-h1 {
+        text-align: center;
+        color: #eee;
+        padding: 55px;
+    }
+    
+    .header-h2 {
+        text-align: center;
+        color: #eee;
+    }
+    
+    .header-h3 {
+        text-align: center;
+        color: #eee;
+    }
+    
+    .header-image {
+        float: left;
+    }
+    /* OTSIKOT */
+    
+    h1 {
+        text-align: center;
+        color: #354170;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #354170;
+    }
+    
+    h3 {
+        text-align: center;
+        color: #354170;
+    }
+    
+    .content-h1 {
+        padding: 1px;
+        margin: 30px 0 0 0;
+    }
+    
+    .content.h3 {
+        padding: 15px;
+    }
+    /* SISÄLTÖ */
+    
+    .footer {
+        background-color: #666;
+        color: #fff;
+        height: 150px;
+        margin: 50px 0 0 0;
+    }
+    
+    .footer p {
+        margin: auto;
+        padding: 20px 0 0 50px;
+    }
+    /* NAVBAR */
+    
+    #navbar {
+        width: 100%;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        margin: auto;
+        background-color: #2c5e76;
+    }
+    
+    li {
+        float: left;
+        font-size: 22px;
+    }
+    
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(70, 167, 86);
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2b54a0;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(10, 3, 49, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(70, 167, 86);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .sticky+.main-content {
+        padding-top: 60px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    /* ------- */
