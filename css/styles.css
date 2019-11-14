@@ -14,7 +14,7 @@
         width: 75%;
         background-color: aliceblue;
         margin: auto;
-        padding: 10px, 0, 10px, 0;
+        padding: 10px 0 10px 0;
         min-height: 80vh;
     }
     
@@ -142,7 +142,7 @@
     }
     
     .footer h2 {
-        padding: 50 0 0 50px;
+        padding: 50px 0 0 50px;
         text-align: left;
     }
     
