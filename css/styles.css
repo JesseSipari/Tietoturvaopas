@@ -7,7 +7,7 @@
         background: #1e2850;
         padding: 10px;
         font-family: Verdana, Arial, Helvetica, sans-serif;
-        font-weight: bold;
+        font-weight: 200;
     }
     
     .main-content {
@@ -63,7 +63,9 @@
     }
 
 em {
-	color: #070F2E;
+	color: #03091F;
+	font-weight: bold;
+	
 }
 
 .source-link {
