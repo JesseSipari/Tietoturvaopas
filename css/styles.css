@@ -128,7 +128,7 @@
     .footer {
         background-image: linear-gradient(to left, rgb(51, 72, 190), rgb(167, 185, 223), rgb(255, 255, 255), rgb(255, 255, 255));
         color: #fff;
-        height: 180px;
+        height: 195px;
         margin: 50px 0 0 0;
     }
     
@@ -147,6 +147,7 @@
     }
     
     .footer-image {
+        margin-top: 15px;
         height: 80px;
     }
     /* NAVBAR */
