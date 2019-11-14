@@ -43,7 +43,7 @@
             <div class="content-h3">
                 <h3>Mitä ovat haittaohjelmat?</h3>
             </div>
-            <p> Haittaohjelmat ovat ei-toivottuja ohjelmia digitaalisissa laitteissa, kuten tietokoneissa ja puhelimissa. Haittaohjelmilla voidaan vakoilla käyttäjää, muuttaa käyttäjän järjestelmän asetuksia, hidastaa järjestelmän yhteyksiä, ottaa järjestelmä
+            <p class="p-inner"> Haittaohjelmat ovat ei-toivottuja ohjelmia digitaalisissa laitteissa, kuten tietokoneissa ja puhelimissa. Haittaohjelmilla voidaan vakoilla käyttäjää, muuttaa käyttäjän järjestelmän asetuksia, hidastaa järjestelmän yhteyksiä, ottaa järjestelmä
                 kokonaan haltuun tai estää järjestelmään pääsy kokonaan. Haittaohjelmat pyrkivät yleensä toimimaan huomaamattomasti, ettei käyttäjä tajuaisi haittaohjelmatartunnan mahdollisuutta.<br><br> Virukset ovat yksi haittaohjelmien luokka. Virukset
                 ovat luotu tuhoamaan tai muuttamaan järjestelmän tietoja ja tiedostoja tarkoituksellisesti. Viruksilla on tapana levitä eteenpäin ja toimia huomaamattomasti. Stealth-virukset ovat viruksia, joilla on kehittyneempi ominaisuus naamioitua
                 virustorjuntasovelluksilta. Stealth-virukset pystyvät piiloittamaan itsensä järjestelmän muistissa, niin ettei tiedoston koosta päätellen voi epäillä virustartuntaa. Virustartunnan voi saada verkosta ladatun tiedoston kautta tai mitä yleisemmin
@@ -59,13 +59,15 @@
                 (backdoorit) ovat haittaohjelmien luokka, joka sisältää ohjelmat, joilla tietotekniikkalaitteen järjestelmään päästään käsiksi kiertämällä laitteen tietoturvamekanismit. Takaoven avulla hyökkääjät voivat hallita tartunnan saanutta laitetta
                 verkon välityksellä. Hyökkäyksissä hyödynnetään käyttöjärjestelmän haavoittuvuuksia, matoja ja viruksia.<br><br> Piilohallintaohjelmat (rootkitit) ovat haittaohjelmien luokka, joka sisältää ohjelmistoja, joilla voidaan muodostaa etäyhteys
                 tartunnan saaneeseen laitteeseen ja kontrolloida sitä. Piilohallintaohjelmat ovat yleensä troijalaisia, jotka piiloutuvat käyttöjärjestelmien sisälle yleensä tuhoamalla kaikki jäljet tartunnasta ja soluttautumalla viattomien sovellusten
-                joukkoon.<br><br> Kiristyshaittaohjelmat (ransomwaret) ovat haittaohjelmien luokka, joka sisältää ohjelmat, jotka estävät tietotekniikkalaitteen käytön kokonaan ja salaavat tämän laitteen tiedostot. Hyökkääjät vaativat tiettyä rahasummaa
-                laitteen tiedostojen palauttamiseen. Maksuvaatimukseen on myös yleensä määritetty tietty aikaraja, johon mennessä summa tulisi maksaa. Jos summaa ei tähän mennessä olla maksettu, haittaohjelma poistaa laitteen kaikki tiedostot kokonaan.<br>                Vakoiluohjelmat (spywaret) ovat haittaohjelmien luokka, joka sisältää ohjelmat, jotka keräävät tartunnan saaneesta laitteesta tietoa ja välittää ne eteenpäin. Kerättyjä tietoja ovat esimerkiksi laitteen arkaluontoiset tiedot. Arkaluontoisiin
-                tietoihin lukeutuu esimerkiksi henkilön käyttäjä-, luottokortti-, identiteettitiedot. Hyökkääjät voivat myös seurata vakoiluohjelmalla internetin käyttöä ja myydä siitä saatua tietoa eteenpäin. Vakoiluohjelmat toimivat yleensä laitteissa
-                salaisesti, ilman käyttäjän tietämystä tartunnasta.
+                joukkoon.
+                <br><br> Kiristyshaittaohjelmat (ransomwaret) ovat haittaohjelmien luokka, joka sisältää ohjelmat, jotka estävät tietotekniikkalaitteen käytön kokonaan ja salaavat tämän laitteen tiedostot. Hyökkääjät vaativat tiettyä rahasummaa laitteen
+                tiedostojen palauttamiseen. Maksuvaatimukseen on myös yleensä määritetty tietty aikaraja, johon mennessä summa tulisi maksaa. Jos summaa ei tähän mennessä olla maksettu, haittaohjelma poistaa laitteen kaikki tiedostot kokonaan.<br> Vakoiluohjelmat
+                (spywaret) ovat haittaohjelmien luokka, joka sisältää ohjelmat, jotka keräävät tartunnan saaneesta laitteesta tietoa ja välittää ne eteenpäin. Kerättyjä tietoja ovat esimerkiksi laitteen arkaluontoiset tiedot. Arkaluontoisiin tietoihin
+                lukeutuu esimerkiksi henkilön käyttäjä-, luottokortti-, identiteettitiedot. Hyökkääjät voivat myös seurata vakoiluohjelmalla internetin käyttöä ja myydä siitä saatua tietoa eteenpäin. Vakoiluohjelmat toimivat yleensä laitteissa salaisesti,
+                ilman käyttäjän tietämystä tartunnasta.
             </p>
             <h3 id="Kuinka suojautua haittaohjelmilta">Kuinka suojautua haittaohjelmilta</h3>
-            <p>Haittaohjelmien torjumisessa on tärkeää huolehtia torjunnan kerroksellisuudesta. Kerroksellisuutta ovat esimerkiksi torjuntaohjelmistot, työasemien asetukset, selainten asetukset, automaattiset päivitykset, tietoverkon segmentointi ja henkilöstön
+            <p class="p-inner">Haittaohjelmien torjumisessa on tärkeää huolehtia torjunnan kerroksellisuudesta. Kerroksellisuutta ovat esimerkiksi torjuntaohjelmistot, työasemien asetukset, selainten asetukset, automaattiset päivitykset, tietoverkon segmentointi ja henkilöstön
                 koulutus sekä sen ajantasaisuuden valvonta.<br><br> Työaseman turvaaminen aloitetaan tekemällä BIOS-asetuksiin tiedonsiirtoon liittyviä turvallisuutta lisääviä rajoituksia, keskeisimpiä näistä ovat WLAN, Bluetooth ja IR-portti rajoitukset.
                 On otettava myös huomioon, että sisäinen modeemi ja verkkoportti ovat myös mahdollisia reittejä haittaohjelmien pääsyyn työasemaan.<br><br> Työasemien käynnistämisen suojaaminen salasanalla on suositeltavaa ja kannettavien työasemien tapauksessa
                 yleensä välttämättömyys. Nämä voidaan toteuttaa työasemassa olevalla niin kutsutulla turvapaneelilla, kiintolevyn salakirjoitusohjelmalla tai BIOS- asutuksista löytyvällä koneen käynnistys salasanalla. Työaseman käynnistämisen asetus on
@@ -79,9 +81,10 @@
                 tai postipalvelimen virustorjunta ei ole riittävä, vaan myös sisäverkon työasemien suojaaminen virustorjuntaohjelmistolla on tarpeellinen.<br><br> Avoimesta verkosta tulevilta uhilta, erityisesti verkkomadoilta, suojautuessa merkittävä
                 tekijä on verkkopalomuuri. Verkkopalomuuri suojaa myös ulospäin menevää liikennettä suodattamalla. Palomuurin säännöissä tulee kiinnittää erityistä huomiota siihen, mitä liikennettä sallitaan sisäverkosta ulospäin. Esimerkiksi vertaisverkkojen
                 käyttö lisää huomattavasti haittaohjelmariskiä. Paremman ulkopuolen liikenteen suojaus saadaan, kun asennetaan ennen palomuuria oleva reititin, joka suodattaa tarpeetonta liikennettä, mikä kohdistuu yleisimpien haittaohjelmien käyttämiin
-                kohdeportteihin.</p>
+                kohdeportteihin.
+            </p>
             <h3 id="Haittaohjelmien poistaminen">Haittaohjelmien poistaminen</h3>
-            <p>Haittaohjelmien poistaminen käy yleensä kätevästi käyttäen kunnollisia haittaohjelmien torjuntaohjelmia. Haittaohjelmien torjuntaohjelmat ovat erittäin tärkeitä yrityksen tietoturvallisuuden kannalta tarjoten kattavan suojauksen haittaohjelmatartuntoja
+            <p class="p-inner">Haittaohjelmien poistaminen käy yleensä kätevästi käyttäen kunnollisia haittaohjelmien torjuntaohjelmia. Haittaohjelmien torjuntaohjelmat ovat erittäin tärkeitä yrityksen tietoturvallisuuden kannalta tarjoten kattavan suojauksen haittaohjelmatartuntoja
                 vastaan. Tämän takia onkin suositeltavaa, että yritys käyttäisi edes jonkinlaista luotettavaa haittaohjelmien torjuntaohjelmaa. Kattavasta suojauksesta ja luotettavuudesta huolimatta, valitettavasti mikään haittaohjelmien torjuntaohjelma
                 ei pysty takaamaan yritykselle 100 prosenttista turvaa haittaohjelmatartunnoista. Haittaohjelmat kehittyvät jatkuvasti ja haittaohjelmien torjuntaohjelmissa tapahtuvat haavoittuvuudet lisäävät tartuntariskiä.<br><br> Listauksissa parhaiten
                 menestyneet haittaohjelmien torjuntaohjelmat ovat Bitdefender Antivirus Plus 2020, Norton AntiVirus Plus, Kaspersky Anti-Virus, F-Secure Antivirus SAFE ja ESET NOD32 Antivirus. Lista haittaohjelmien torjuntaohjelmista on laaja, ja yritykselle
