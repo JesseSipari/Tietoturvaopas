@@ -62,6 +62,10 @@
         line-height: 1.5;
     }
 
+em {
+	color: #070F2E;
+}
+
 .source-link {
 	margin: 10px 0 10px 25px;
 	
